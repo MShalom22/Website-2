@@ -1,0 +1,175 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+.what-we-do {
+  padding: 5rem 7%;
+  background: #110033;
+}
+
+.main-we-do {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner-we-do {
+  flex: 1 1 45rem;
+}
+
+.inner-we-do h1 {
+  color: #f1f1f1;
+  font-size: 40px;
+  text-align: center;
+}
+
+.inner-we-do p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.inner-we-do a {
+  padding: 2rem 4rem;
+  background: #110033;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.portfolio {
+  background-color: #110033;
+  padding: 20px;
+  font-family: Arial;
+}
+
+.portfolio h1 {
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.row {
+  margin: 8px -16px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.get-in-touch {
+  padding: 4rem 7%;
+  background: #110033;
+}
+
+.get-in-touch h1 {
+  color: #f1f1f1;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-touch p {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
